@@ -16,7 +16,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 68px;
+  height: 60px;
   background-color: gray;
 }
 .header__logo-container {
@@ -31,8 +31,8 @@
   margin-right: 20px;
 }
 .header__logo-container img {
-  width: 60px;
-  margin-left: 10px;
+  width: 48px;
+  margin-left: 18px;
 }
 .header__logo-container p span {
   margin-left: 13px;
@@ -52,12 +52,6 @@
   color: #000000;
   text-decoration: none;
 }
-.header__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 10px;
-}
 .header .icons__media {
   margin-right: 10px;
 }
@@ -69,7 +63,7 @@
   color: #000000;
   text-decoration: none;
 }
-.header .icons__car-number {
+.header__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,18 +71,32 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.header .icons__car-number .number-articles {
+.header__icons .number-articles {
+  position: relative;
+  left: 4px;
   width: 14px;
-  text-align: center;
-  border-radius: 50%;
+  height: 16px;
+  border-radius: 40%;
   background-color: #000000;
 }
-.header .icons__car-number .number-articles p {
-  position: relative;
+.header__icons .number-articles p {
   font-size: 12px;
   font-family: "Fredoka", sans-serif;
   font-weight: 400;
   color: #FFFFFF;
+}
+.header__icons .number-articles p span {
+  padding-left: 3px;
+}
+.header__icons a {
+  font-size: 22px;
+  margin-right: 16px;
+  color: #000000;
+}
+.header__icons .burger-menu a {
+  font-size: 28px;
+  margin-right: 16px;
+  color: #000000;
 }
 
 main {
