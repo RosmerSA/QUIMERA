@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 68px;
+  background-color: gray;
+}
+.header__logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 140px;
+  margin-right: 20px;
+}
+.header__logo-container img {
+  width: 60px;
+  margin-left: 10px;
+}
+.header__logo-container p span {
+  margin-left: 13px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+}
+.header__lista {
+  display: none;
+  list-style: none;
+  font-family: "Fredoka", sans-serif;
+  font-size: 18px;
+}
+.header__lista li a {
+  margin-right: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+.header__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+.header .icons__media {
+  margin-right: 10px;
+}
+.header .icons__media i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.header .icons__media a {
+  color: #000000;
+  text-decoration: none;
+}
+.header .icons__car-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .icons__car-number .number-articles {
+  width: 14px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.header .icons__car-number .number-articles p {
+  position: relative;
+  font-size: 12px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+main {
+  height: 100%;
+}
+
+.section-1 {
+  height: 100vh;
+}

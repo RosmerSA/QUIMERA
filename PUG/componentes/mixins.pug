@@ -1,0 +1,42 @@
+-var span_name_serie_section1 = ["Breaking Bad", "Friends", "Rick and Morty", "Bojack Horseman", "Better Call Soul"];
+
+-var span_phrase_serie_section1 = ["SAY MY NAME", "WE WERE ON A BREAK", "FOCUS ON CIENCE MORTY", "You are Bojack Horseman, there is no cure for that", "BETTER CALL SOUL GODMAN"]
+
+mixin new-tshirts-item (imagen, nombre_polo, last_price, new_price)
+	.item
+		figure.item__photo 
+			img(src=imagen, alt="Item")
+		.item__details
+			span.discount 30% OFF
+			span.nombre_polo=nombre_polo
+			span.last_price=last_price
+			span.new_price=new_price 
+
+mixin normal-tshirt-item (imagen, nombre_polo, last_price, new_price)
+	.item
+		figure.item__photo 
+			img(src=imagen, alt="Item")
+		.item__details
+			p
+				span.discount 30% OFF
+			p
+				span.nombre_polo=nombre_polo
+			p
+				span.last_price=last_price
+			p
+				span.new_price=new_price 
+
+mixin review-product(reviewer_name, reviewer_shirt, reviewer_comment)
+	.section-4__review 
+		p
+			span.review__name=reviewer_name
+		p
+			span.review__polo-name=reviewer_shirt 
+		.review__stars 
+			i.fa-solid.fa-star
+			i.fa-solid.fa-star
+			i.fa-solid.fa-star
+			i.fa-solid.fa-star
+			i.fa-solid.fa-star
+		p.review__comment=reviewer_comment
+

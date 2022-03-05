@@ -1,0 +1,36 @@
+// Colores de layout y fuentes
+
+$color-primario: #FFFFFF;
+$color-segundario: #000000;
+
+$color-fuente-1: #FFFFFF;
+$color-fuente-2: #000000;
+
+// Tamaño de fuentes y tipos
+
+$fuente-sm: 12px;
+$fuente-md: 18px;
+$fuente-big: 24px;
+
+$fuente-1: 'Hubballi', cursive;
+$fuente-2: 'Fredoka', sans-serif;
+$fuente-3: 'Roboto Mono', monospace;
+
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size)*1.5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+

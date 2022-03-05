@@ -1,0 +1,51 @@
+include ./componentes/mixins.pug
+
+doctype html
+html(lang="en")
+	include ./componentes/head.pug
+	body 
+		include ./componentes/header.pug
+		main 
+			section.section-1
+				p 
+					span.section-1__name-serie
+						a(href="") #{span_name_serie_section1[0]}
+				p
+					span.section-1__phrase-serie 
+						h1 #{span_phrase_serie_section1[0]}
+
+			section.section-2 
+				h2 nuevas prendas
+				.new-tshirts-container
+					+new-tshirts-item ('/IMAGES/Breakinb-tshirt.jpg', "Breaking Bad Polo Blanco", "$60.00", "$45.00")
+					+new-tshirts-item ("/IMAGES/friends-tshirt.jpg", "Friends Polo Rosa", "$60.00", "$45.00")
+					+new-tshirts-item ("/IMAGES/Rick-and-morty-tshirt.jpg", "$60.00", "$45.00")
+					+new-tshirts-item ("/IMAGES/bojack-tshirt.jpg", "$60.00", "$45.00")
+					+new-tshirts-item ("/IMAGES/better-call-soul-tshirt.jpg", "$60.00", "$45.00")
+
+			section.section-3 
+				.normal-tshirts-container
+					h2 polos
+					+normal-tshirt-item("/IMAGES/normal-tshirts/better-call-saul-normal-tshirt.jpg", "Polo bettar call soul", "$60.00", "$45.00" )
+					+normal-tshirt-item("/IMAGES/normal-tshirts/Game Of Thrones Night's Watch Womens T-Shirt.jpg", "Juego de tronos polo de dama", "$60.00", "$45.00")
+					+normal-tshirt-item("/IMAGES/normal-tshirts/RickAndMorty-normal-T-shirt.jpg","$60.00","$45.00")
+					figure.model-container
+						img(src="/IMAGES/normal-tshirts/Models-1.jpg", alt="chicos con polo")
+				.normal-sweaters-container 
+					h2 poleras
+					figure.model-container 
+						img(src="/IMAGES/normal-tshirts/Models-2.jpg", alt="chico con polo")
+					+normal-tshirt-item("/IMAGES/poleras/Game-of-thrones-sweater.jpg", "Sueter de juego de tronos negro", "$60.00", "$45.00")
+					+normal-tshirt-item("/IMAGES/poleras/got-sweater2.jpg", "Sueter de juego de tronos gris", "$60.00", "$45.00")
+					+normal-tshirt-item("/IMAGES/poleras/rick-y-morty-sweater.jpg", "Sueter de rick y morty", "$60.00", "$45.00")
+				
+			section.section-4 
+				.section-4__contacts-container 
+					h2 clientes
+					+review-product('rafael', 'Rick&Morty polo', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo, eaque, quia suscipit cupiditate recusandae consequuntur asperiores tenetur magnam officia tempore veritatis deleniti sapiente? Qui quia omnis asperiores veniam ut')  						
+					p
+						span ver más reseñas
+					figure.phone__image 
+						img(src="#", alt="telefono con instagram de nuestra web")
+		include ./componentes/footer.pug
+		
