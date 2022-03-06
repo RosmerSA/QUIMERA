@@ -29,7 +29,12 @@
         &__details {
             display: flex;
             flex-direction: column;
+            position: relative;
+            bottom: 18px;
             text-align: center;
+            font-family: $fuente-1;
+            line-height: 20px;
+            font-weight: 600;
             
             .last_price {
                 text-decoration: line-through;
@@ -51,13 +56,6 @@
             text-align: center;
             color: $color-fuente-1;
         }
-    }
-
-    .item__details {
-        position: relative;
-        bottom: 18px;
-        font-family: $fuente-2;
-        line-height: 25px;
     }
 }
 

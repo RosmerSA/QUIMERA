@@ -1,0 +1,49 @@
+.section-5 {
+    @include section_styles(100%, "");
+    h2 {
+        @include section-h2_styles;
+    }
+
+    &__reviews-container {
+        width: 300px;
+        margin: 0 auto;
+
+        .review {
+            margin: 20px 0px;
+            text-align: center;
+            font-family: $fuente-2;
+            font-size: $fuente-sm;
+            text-transform: uppercase;
+
+            p {
+                margin-bottom: 8px;
+            }
+
+            .review__polo-name {
+                font-weight: 600;
+            }
+
+            .review__stars {
+                margin-bottom: 8px;
+            }
+
+            .review__name,
+            .review__comment {
+                color: gray;
+            }
+        }   
+    }
+
+    .more-reviews {
+        text-align: center;
+        margin-bottom: 20px;
+        a {     
+            font-family: $fuente-2;
+            font-size: $fuente-sm;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-fuente-2;
+        }
+    }
+}

@@ -33,11 +33,11 @@ mixin normal-tshirt-item (imagen, nombre_polo, last_price, new_price)
 				span.new_price=new_price  
 
 mixin review-product(reviewer_name, reviewer_shirt, reviewer_comment)
-	.section-4__review 
-		p
-			span.review__name=reviewer_name
-		p
-			span.review__polo-name=reviewer_shirt 
+	.review  
+		p.review__name
+			span=reviewer_name
+		p.review__polo-name
+			span=reviewer_shirt 
 		.review__stars 
 			i.fa-solid.fa-star
 			i.fa-solid.fa-star
@@ -45,4 +45,5 @@ mixin review-product(reviewer_name, reviewer_shirt, reviewer_comment)
 			i.fa-solid.fa-star
 			i.fa-solid.fa-star
 		p.review__comment=reviewer_comment
+
 

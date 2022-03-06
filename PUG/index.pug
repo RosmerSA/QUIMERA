@@ -41,12 +41,10 @@ html(lang="en")
 					+normal-tshirt-item("/IMAGES/poleras/rick-y-morty-sweater.jpg", "Sueter de rick y morty", "$60.00", "$45.00")
 				
 			section.section-5
-				.section-5__contacts-container 
-					h2 clientes
-					+review-product('rafael', 'Rick&Morty polo', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo, eaque, quia suscipit cupiditate recusandae consequuntur asperiores tenetur magnam officia tempore veritatis deleniti sapiente? Qui quia omnis asperiores veniam ut')  						
-					p
-						span ver más reseñas
-					figure.phone__image 
-						img(src="#", alt="telefono con instagram de nuestra web")
-		include ./componentes/footer.pug
-		
+				h2 clientes
+				.section-5__reviews-container 
+					+review-product('Rafael', 'Rick&Morty polo', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo, eaque, quia suscipit cupiditate recusandae consequuntur asperiores tenetur magnam officia tempore veritatis deleniti sapiente? Qui quia omnis asperiores veniam ut')
+					+review-product("Jimena", "Polera juego de tronos", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda soluta laudantium tempore nam pariatur non consectetur neque commodi amet dolor voluptas explicabo officia, magni dolorum maiores quos hic labore.")
+					.more-reviews 
+						a(href="#") ver mas reseñas
+	include ./componentes/footer.pug		

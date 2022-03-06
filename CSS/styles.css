@@ -41,9 +41,9 @@ main {
 .header__logo-container p span {
   margin-left: 13px;
   text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Fredoka", sans-serif;
-  font-weight: 400;
+  font-size: 16px;
+  font-family: "Hubballi", cursive;
+  font-weight: 600;
 }
 .header__lista {
   display: none;
@@ -151,8 +151,8 @@ main {
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  -webkit-box-shadow: 6px 6px;
-          box-shadow: 6px 6px;
+  -webkit-box-shadow: 7px 7px 4px;
+          box-shadow: 7px 7px 4px;
   color: #000000;
   background-color: white;
 }
@@ -209,7 +209,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  bottom: 18px;
   text-align: center;
+  font-family: "Hubballi", cursive;
+  line-height: 20px;
+  font-weight: 600;
 }
 .section-2 .new-tshirts-container .item__details .last_price {
   text-decoration: line-through;
@@ -227,12 +232,6 @@ main {
   font-family: "Fredoka", sans-serif;
   text-align: center;
   color: #FFFFFF;
-}
-.section-2 .new-tshirts-container .item__details {
-  position: relative;
-  bottom: 18px;
-  font-family: "Fredoka", sans-serif;
-  line-height: 25px;
 }
 
 .section-3 {
@@ -277,7 +276,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  bottom: 18px;
   text-align: center;
+  font-family: "Hubballi", cursive;
+  line-height: 20px;
+  font-weight: 600;
 }
 .section-3 .item__details .last_price {
   text-decoration: line-through;
@@ -296,12 +300,6 @@ main {
   text-align: center;
   color: #FFFFFF;
 }
-.section-3 .item__details {
-  position: relative;
-  bottom: 18px;
-  font-family: "Fredoka", sans-serif;
-  line-height: 25px;
-}
 .section-3 .model-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,9 +314,9 @@ main {
   height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 10px 10px #000000;
-          box-shadow: 10px 10px #000000;
-  margin-bottom: 20px;
+  -webkit-box-shadow: 10px 10px 4px #000000;
+          box-shadow: 10px 10px 4px #000000;
+  margin-bottom: 30px;
 }
 
 .section-4 {
@@ -362,7 +360,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  bottom: 18px;
   text-align: center;
+  font-family: "Hubballi", cursive;
+  line-height: 20px;
+  font-weight: 600;
 }
 .section-4 .item__details .last_price {
   text-decoration: line-through;
@@ -381,12 +384,6 @@ main {
   text-align: center;
   color: #FFFFFF;
 }
-.section-4 .item__details {
-  position: relative;
-  bottom: 18px;
-  font-family: "Fredoka", sans-serif;
-  line-height: 25px;
-}
 .section-4 .model-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,7 +399,95 @@ main {
   height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 10px 10px #000000;
-          box-shadow: 10px 10px #000000;
+  -webkit-box-shadow: 10px 10px 4px #000000;
+          box-shadow: 10px 10px 4px #000000;
   margin-bottom: 20px;
+}
+
+.section-5 {
+  height: 100%;
+  padding-top: 10px;
+  background-image: url("");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-5 h2 {
+  font-size: 32px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.section-5__reviews-container {
+  width: 300px;
+  margin: 0 auto;
+}
+.section-5__reviews-container .review {
+  margin: 20px 0px;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.section-5__reviews-container .review p {
+  margin-bottom: 8px;
+}
+.section-5__reviews-container .review .review__polo-name {
+  font-weight: 600;
+}
+.section-5__reviews-container .review .review__stars {
+  margin-bottom: 8px;
+}
+.section-5__reviews-container .review .review__name,
+.section-5__reviews-container .review .review__comment {
+  color: gray;
+}
+.section-5 .more-reviews {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-5 .more-reviews a {
+  font-family: "Fredoka", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #F8DC46;
+  padding-top: 4px;
+}
+.footer .footer__top {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .footer__top ul {
+  font-family: "Fredoka", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 20px auto;
+}
+.footer .footer__top ul li {
+  margin-bottom: 4px;
+}
+.footer .footer__top ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.footer .footer__top ul li:nth-child(1) {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.footer__form input {
+  margin-bottom: 8px;
 }
