@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+main {
+  height: 100%;
+}
+
 .header {
   position: fixed;
   display: -webkit-box;
@@ -18,7 +22,6 @@
           justify-content: space-between;
   width: 100%;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.3);
 }
 .header__logo-container {
   display: -webkit-box;
@@ -74,20 +77,20 @@
 }
 .header__icons .number-articles {
   position: relative;
-  left: 4px;
-  width: 14px;
-  height: 16px;
-  border-radius: 40%;
+  left: 0px;
+  bottom: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   background-color: #000000;
 }
 .header__icons .number-articles p {
+  text-align: center;
   font-size: 16;
   font-family: "Hubballi", cursive;
   font-weight: 400;
   color: #FFFFFF;
-}
-.header__icons .number-articles p span {
-  padding-left: 2px;
+  padding-top: 2px;
 }
 .header__icons a {
   font-size: 22px;
@@ -98,16 +101,308 @@
   font-size: 28px;
   margin-right: 16px;
   color: #000000;
-}
-
-main {
-  height: 100%;
+  margin-left: 4px;
 }
 
 .section-1 {
   height: 100vh;
-  background-image: url(/IMAGES/rick-y-morty-background2.jpg);
+  padding-top: 10px;
+  background-image: url("/IMAGES/background/1.1.png");
+  -o-object-fit: cover;
+     object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.section-1__text-container {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 120px;
+  margin-left: 8vw;
+}
+.section-1__text-container .name-serie {
+  font-family: "Hubballi", cursive;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+.section-1__text-container .phrase-serie {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 800;
+  font-size: 68px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.section-1__text-container .button {
+  width: 140px;
+  height: 32px;
+  padding-top: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Hubballi", cursive;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 6px 6px;
+          box-shadow: 6px 6px;
+  color: #000000;
+  background-color: white;
+}
+
+.section-2 {
+  height: 100%;
+  padding-top: 10px;
+  background-image: url("");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-2 h2 {
+  font-size: 32px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.section-2 .new-tshirts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+.section-2 .new-tshirts-container .item {
+  width: 200px;
+  height: 320px;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+.section-2 .new-tshirts-container .item__photo {
+  width: inherit;
+  height: 75%;
+}
+.section-2 .new-tshirts-container .item__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-2 .new-tshirts-container .item__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.section-2 .new-tshirts-container .item__details .last_price {
+  text-decoration: line-through;
+}
+.section-2 .new-tshirts-container .discount-container {
+  position: relative;
+  width: 68px;
+  height: 20px;
+  padding-top: 1px;
+  bottom: 60px;
+  background-color: #000000;
+}
+.section-2 .new-tshirts-container .discount-container p {
+  font-size: 12px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section-2 .new-tshirts-container .item__details {
+  position: relative;
+  bottom: 18px;
+  font-family: "Fredoka", sans-serif;
+  line-height: 25px;
+}
+
+.section-3 {
+  background-color: #F8DC46;
+  height: 100%;
+  padding-top: 10px;
+  background-image: url("");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-3 h2 {
+  font-size: 32px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.section-3 .item {
+  width: 200px;
+  height: 320px;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+.section-3 .item__photo {
+  width: inherit;
+  height: 75%;
+}
+.section-3 .item__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-3 .item__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.section-3 .item__details .last_price {
+  text-decoration: line-through;
+}
+.section-3 .discount-container {
+  position: relative;
+  width: 68px;
+  height: 20px;
+  padding-top: 1px;
+  bottom: 60px;
+  background-color: #000000;
+}
+.section-3 .discount-container p {
+  font-size: 12px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section-3 .item__details {
+  position: relative;
+  bottom: 18px;
+  font-family: "Fredoka", sans-serif;
+  line-height: 25px;
+}
+.section-3 .model-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+}
+.section-3 .model-container img {
+  width: 200px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 10px 10px #000000;
+          box-shadow: 10px 10px #000000;
+  margin-bottom: 20px;
+}
+
+.section-4 {
+  height: 100%;
+  padding-top: 10px;
+  background-image: url("");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-4 h2 {
+  font-size: 32px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.section-4 .item {
+  width: 200px;
+  height: 320px;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+.section-4 .item__photo {
+  width: inherit;
+  height: 75%;
+}
+.section-4 .item__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-4 .item__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.section-4 .item__details .last_price {
+  text-decoration: line-through;
+}
+.section-4 .discount-container {
+  position: relative;
+  width: 68px;
+  height: 20px;
+  padding-top: 1px;
+  bottom: 60px;
+  background-color: #000000;
+}
+.section-4 .discount-container p {
+  font-size: 12px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section-4 .item__details {
+  position: relative;
+  bottom: 18px;
+  font-family: "Fredoka", sans-serif;
+  line-height: 25px;
+}
+.section-4 .model-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  margin-top: 10px;
+}
+.section-4 .model-container img {
+  width: 200px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 10px 10px #000000;
+          box-shadow: 10px 10px #000000;
+  margin-bottom: 20px;
 }

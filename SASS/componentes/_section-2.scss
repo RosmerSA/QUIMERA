@@ -1,0 +1,16 @@
+.section-2 {
+    @include section_styles(100%, "");
+
+    h2 {
+        @include section-h2_styles;
+    }
+    
+    .new-tshirts-container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+
+        @include item_styles();
+    }
+}

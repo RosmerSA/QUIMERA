@@ -2,6 +2,7 @@
 
 $color-primario: #FFFFFF;
 $color-segundario: #000000;
+$color-terciario: #F8DC46;
 
 $color-fuente-1: #FFFFFF;
 $color-fuente-2: #000000;
@@ -38,5 +39,9 @@ $fuente-3: 'Roboto Mono', monospace;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+main {
+    height: 100%;
 }
 

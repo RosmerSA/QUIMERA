@@ -1,0 +1,42 @@
+.section-1 {
+    @include section_styles(100vh,"/IMAGES/background/1.1.png");
+}
+
+.section-1__text-container {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    margin-left: 8vw;
+
+    .name-serie {
+        font-family: $fuente-1;
+        font-size: $fuente-big;
+        font-weight: 600;
+        text-decoration: none;
+        color: $color-fuente-2;
+    }
+
+    .phrase-serie {
+        font-family: $fuente-2;
+        font-weight: 800;
+        font-size: 68px;
+        color: $color-fuente-2;
+        margin-bottom: 8px;   
+    }
+
+    .button {
+        width: 140px;
+        height: 32px;
+        padding-top: 5px;
+        border-radius: 10px;
+        font-size: $fuente-md;
+        font-family: $fuente-1;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 6px 6px;
+        color: $color-fuente-2;
+        background-color: rgba($color-primario, $alpha: 1);
+    }
+}

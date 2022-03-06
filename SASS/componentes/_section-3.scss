@@ -1,0 +1,25 @@
+.section-3 {
+    background-color: $color-terciario;
+    h2 {
+        @include section-h2_styles;
+    }
+
+    @include section_styles(100%, "");
+    @include item_styles;
+
+    .model-container {
+        display: flex;
+        justify-content: center;
+        width: auto;
+       
+
+        img {
+            width: 200px;
+            height: 280px;
+            object-fit: cover;
+            box-shadow: 10px 10px $color-segundario;
+            margin-bottom: 20px;
+        }
+    }
+
+}

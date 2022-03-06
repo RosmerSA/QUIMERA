@@ -6,25 +6,31 @@ mixin new-tshirts-item (imagen, nombre_polo, last_price, new_price)
 	.item
 		figure.item__photo 
 			img(src=imagen, alt="Item")
-		.item__details
-			span.discount 30% OFF
-			span.nombre_polo=nombre_polo
-			span.last_price=last_price
-			span.new_price=new_price 
-
-mixin normal-tshirt-item (imagen, nombre_polo, last_price, new_price)
-	.item
-		figure.item__photo 
-			img(src=imagen, alt="Item")
-		.item__details
+		.discount-container
 			p
 				span.discount 30% OFF
+		.item__details
 			p
 				span.nombre_polo=nombre_polo
 			p
 				span.last_price=last_price
 			p
-				span.new_price=new_price 
+				span.new_price=new_price  
+
+mixin normal-tshirt-item (imagen, nombre_polo, last_price, new_price)
+	.item
+		figure.item__photo 
+			img(src=imagen, alt="Item")
+		.discount-container
+			p
+				span.discount 30% OFF
+		.item__details
+			p
+				span.nombre_polo=nombre_polo
+			p
+				span.last_price=last_price
+			p
+				span.new_price=new_price  
 
 mixin review-product(reviewer_name, reviewer_shirt, reviewer_comment)
 	.section-4__review 

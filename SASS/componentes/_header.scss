@@ -5,7 +5,7 @@
     justify-content: space-between;
     width: 100%;
     height: 60px;
-    background-color: rgba($color-primario, $alpha: .3);
+    // background-color: rgba($color-primario, $alpha: .8);
     
     &__logo-container {
         display: flex;
@@ -61,21 +61,20 @@
 
         .number-articles { 
             position: relative;
-            left: 4px; 
-            width: 14px;
-            height: 16px;
-            border-radius: 40%;
+            left: 0px;
+            bottom: 1px; 
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
             background-color: $color-segundario;
 
-            p {               
+            p {    
+                text-align: center;           
                 font-size: 16;
                 font-family: $fuente-1;
                 font-weight: 400;
                 color: $color-fuente-1;
-
-                span {
-                    padding-left: 2px;
-                }
+                padding-top: 2px
             }
         }
         
@@ -85,6 +84,7 @@
 
         .burger-menu a {
             @include icons(28px);
+            margin-left: 4px;
         }
 
 

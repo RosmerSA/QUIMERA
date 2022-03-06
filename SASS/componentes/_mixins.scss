@@ -1,0 +1,70 @@
+@mixin section_styles($height, $bg-url){
+    height: $height;
+    padding-top: 10px;
+    background-image: url($bg-url);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin item_styles() {
+    .item {
+        width: 200px;
+        height: 320px;
+        margin: 20px auto;
+        text-transform: uppercase;
+
+        &__photo {
+            width: inherit;
+            height: 75%;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;   
+            }
+        }
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            .last_price {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .discount-container {
+        position: relative;
+        width: 68px;
+        height: 20px;
+        padding-top: 1px;
+        bottom: 60px;
+        background-color: $color-segundario;
+
+        p {
+            font-size: $fuente-sm;
+            font-family: $fuente-2;
+            text-align: center;
+            color: $color-fuente-1;
+        }
+    }
+
+    .item__details {
+        position: relative;
+        bottom: 18px;
+        font-family: $fuente-2;
+        line-height: 25px;
+    }
+}
+
+@mixin section-h2_styles {
+    font-size: 32px;
+    font-family: $fuente-2;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
