@@ -2,13 +2,13 @@
 
 -var span_phrase_serie_section1 = ["SAY MY NAME", "WE WERE ON A BREAK", "FOCUS ON CIENCE MORTY", "You are Bojack Horseman, there is no cure for that", "BETTER CALL SOUL GODMAN"]
 
-mixin new-tshirts-item (imagen, nombre_polo, last_price, new_price)
+mixin new-tshirts-item (imagen, nombre_polo, last_price, new_price, $discount)
 	.item
 		figure.item__photo 
 			img(src=imagen, alt="Item")
 		.discount-container
 			p
-				span.discount 30% OFF
+				span.discount=($discount+'%'+' OFF')
 		.item__details
 			p
 				span.nombre_polo=nombre_polo
@@ -23,7 +23,7 @@ mixin normal-tshirt-item (imagen, nombre_polo, last_price, new_price)
 			img(src=imagen, alt="Item")
 		.discount-container
 			p
-				span.discount 30% OFF
+				span.discount=('%'+$discount+'OFF')
 		.item__details
 			p
 				span.nombre_polo=nombre_polo

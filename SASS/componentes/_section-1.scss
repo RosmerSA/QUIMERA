@@ -6,8 +6,8 @@
     width: 240px;
     display: flex;
     flex-direction: column;
-    padding-top: 120px;
-    margin-left: 8vw;
+    padding-top: 110px;
+    margin-left: 10vw;
 
     .name-serie {
         font-family: $fuente-1;
@@ -26,17 +26,6 @@
     }
 
     .button {
-        width: 140px;
-        height: 32px;
-        padding-top: 5px;
-        border-radius: 10px;
-        font-size: $fuente-md;
-        font-family: $fuente-1;
-        font-weight: 800;
-        text-align: center;
-        text-decoration: none;
-        box-shadow: 7px 7px 4px;
-        color: $color-fuente-2;
-        background-color: rgba($color-primario, $alpha: 1);
+       @include button;
     }
 }

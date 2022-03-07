@@ -1,4 +1,5 @@
 .section-3 {
+    padding-top: 10px;
     background-color: $color-terciario;
     h2 {
         @include section-h2_styles;
@@ -8,9 +9,9 @@
     @include item_styles;
 
     .model-container {
+        width: auto;
         display: flex;
         justify-content: center;
-        width: auto;
        
         img {
             width: 200px;

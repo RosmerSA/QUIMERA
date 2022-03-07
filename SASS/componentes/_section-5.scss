@@ -4,11 +4,20 @@
         @include section-h2_styles;
     }
 
-    &__reviews-container {
-        width: 300px;
+    .container-1 {
+        width: fit-content;
+        min-width: 300px;
+        margin: 0 auto 20px auto;
+        padding: 10px;
+        border: 3px solid $color-segundario;
+        border-radius: 30px;
+    }
+
+    .reviews-container {
         margin: 0 auto;
 
         .review {
+            width: 260px;
             margin: 20px 0px;
             text-align: center;
             font-family: $fuente-2;
@@ -37,6 +46,7 @@
     .more-reviews {
         text-align: center;
         margin-bottom: 20px;
+
         a {     
             font-family: $fuente-2;
             font-size: $fuente-sm;
@@ -44,6 +54,10 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $color-fuente-2;
+        }
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 }

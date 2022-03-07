@@ -1,0 +1,66 @@
+.header {
+    &__lista {
+        @include media(tablet) {
+            display: flex;
+        }
+    }
+}
+
+.section-1 {
+
+    .section-1__text-container {
+        @include media(tablet) {
+            padding-top: 100px;
+        }
+        @include media(desktop-s) {
+            padding-top: 140px;
+        }
+        @include media(desktop-m) {
+            padding-top: 180px;
+        }
+    }   
+}
+
+.section-2 {
+    .new-tshirts-container {
+        @include media(tablet) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+.section-3 {
+    .new-tshirts-container {
+        @include media(tablet) {
+            display: flex;
+        }
+    }
+}
+
+.section-4 {
+    .new-tshirts-container {
+        @include media(tablet) {
+            display: flex;
+        }
+    }
+}
+
+.section-5 {
+    .reviews-container {
+        @include media(tablet){
+            display: flex;
+        }
+    }
+}
+
+.footer {
+    &__top {
+        padding-bottom: 10px;
+        @include media(tablet) {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}

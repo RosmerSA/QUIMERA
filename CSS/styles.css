@@ -22,6 +22,8 @@ main {
           justify-content: space-between;
   width: 100%;
   height: 60px;
+  z-index: 1;
+  background-color: rgba(248, 220, 70, 0.8);
 }
 .header__logo-container {
   display: -webkit-box;
@@ -49,12 +51,16 @@ main {
   display: none;
   list-style: none;
   font-family: "Fredoka", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .header__lista li a {
   margin-right: 40px;
   color: #000000;
   text-decoration: none;
+}
+.header__lista li a:hover {
+  text-decoration: underline;
 }
 .header .icons__media {
   margin-right: 10px;
@@ -106,7 +112,6 @@ main {
 
 .section-1 {
   height: 100vh;
-  padding-top: 10px;
   background-image: url("/IMAGES/background/1.1.png");
   -o-object-fit: cover;
      object-fit: cover;
@@ -124,8 +129,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 120px;
-  margin-left: 8vw;
+  padding-top: 110px;
+  margin-left: 10vw;
 }
 .section-1__text-container .name-serie {
   font-family: "Hubballi", cursive;
@@ -142,10 +147,11 @@ main {
   margin-bottom: 8px;
 }
 .section-1__text-container .button {
-  width: 140px;
+  width: 160px;
   height: 32px;
-  padding-top: 5px;
+  padding: 6px;
   border-radius: 10px;
+  border: none;
   font-size: 18px;
   font-family: "Hubballi", cursive;
   font-weight: 800;
@@ -159,7 +165,6 @@ main {
 
 .section-2 {
   height: 100%;
-  padding-top: 10px;
   background-image: url("");
   -o-object-fit: cover;
      object-fit: cover;
@@ -168,11 +173,11 @@ main {
   background-size: cover;
 }
 .section-2 h2 {
+  margin: 12px auto;
   font-size: 32px;
   font-family: "Fredoka", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 16px;
 }
 .section-2 .new-tshirts-container {
   display: -webkit-box;
@@ -182,7 +187,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 300px;
   margin: 0 auto;
 }
 .section-2 .new-tshirts-container .item {
@@ -235,9 +239,9 @@ main {
 }
 
 .section-3 {
+  padding-top: 10px;
   background-color: #F8DC46;
   height: 100%;
-  padding-top: 10px;
   background-image: url("");
   -o-object-fit: cover;
      object-fit: cover;
@@ -246,11 +250,11 @@ main {
   background-size: cover;
 }
 .section-3 h2 {
+  margin: 12px auto;
   font-size: 32px;
   font-family: "Fredoka", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 16px;
 }
 .section-3 .item {
   width: 200px;
@@ -301,13 +305,13 @@ main {
   color: #FFFFFF;
 }
 .section-3 .model-container {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: auto;
 }
 .section-3 .model-container img {
   width: 200px;
@@ -321,7 +325,6 @@ main {
 
 .section-4 {
   height: 100%;
-  padding-top: 10px;
   background-image: url("");
   -o-object-fit: cover;
      object-fit: cover;
@@ -330,11 +333,11 @@ main {
   background-size: cover;
 }
 .section-4 h2 {
+  margin: 12px auto;
   font-size: 32px;
   font-family: "Fredoka", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 16px;
 }
 .section-4 .item {
   width: 200px;
@@ -385,14 +388,13 @@ main {
   color: #FFFFFF;
 }
 .section-4 .model-container {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: auto;
-  margin-top: 10px;
 }
 .section-4 .model-container img {
   width: 200px;
@@ -406,7 +408,6 @@ main {
 
 .section-5 {
   height: 100%;
-  padding-top: 10px;
   background-image: url("");
   -o-object-fit: cover;
      object-fit: cover;
@@ -415,34 +416,44 @@ main {
   background-size: cover;
 }
 .section-5 h2 {
+  margin: 12px auto;
   font-size: 32px;
   font-family: "Fredoka", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 16px;
 }
-.section-5__reviews-container {
-  width: 300px;
+.section-5 .container-1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 300px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 30px;
+}
+.section-5 .reviews-container {
   margin: 0 auto;
 }
-.section-5__reviews-container .review {
+.section-5 .reviews-container .review {
+  width: 260px;
   margin: 20px 0px;
   text-align: center;
   font-family: "Fredoka", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
-.section-5__reviews-container .review p {
+.section-5 .reviews-container .review p {
   margin-bottom: 8px;
 }
-.section-5__reviews-container .review .review__polo-name {
+.section-5 .reviews-container .review .review__polo-name {
   font-weight: 600;
 }
-.section-5__reviews-container .review .review__stars {
+.section-5 .reviews-container .review .review__stars {
   margin-bottom: 8px;
 }
-.section-5__reviews-container .review .review__name,
-.section-5__reviews-container .review .review__comment {
+.section-5 .reviews-container .review .review__name,
+.section-5 .reviews-container .review .review__comment {
   color: gray;
 }
 .section-5 .more-reviews {
@@ -457,6 +468,9 @@ main {
   text-decoration: none;
   color: #000000;
 }
+.section-5 .more-reviews:hover {
+  text-decoration: underline;
+}
 
 .footer {
   width: 100%;
@@ -465,16 +479,16 @@ main {
   padding-top: 4px;
 }
 .footer .footer__top {
-  width: 300px;
   margin: 0 auto;
   text-align: center;
 }
 .footer .footer__top ul {
+  width: auto;
   font-family: "Fredoka", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   list-style: none;
-  margin: 20px auto;
+  margin: 20px;
 }
 .footer .footer__top ul li {
   margin-bottom: 4px;
@@ -488,6 +502,121 @@ main {
   font-size: 18px;
   margin-bottom: 6px;
 }
-.footer__form input {
-  margin-bottom: 8px;
+.footer .footer__form {
+  margin-bottom: 18px;
+  text-align: center;
+}
+.footer .footer__form .email {
+  width: 200px;
+  padding: 4px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #F8DC46;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.footer .footer__form .suscribete {
+  width: 160px;
+  height: 32px;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-family: "Hubballi", cursive;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 7px 7px 4px;
+          box-shadow: 7px 7px 4px;
+  color: #000000;
+  background-color: white;
+  cursor: pointer;
+}
+.footer .footer__bottom {
+  text-align: center;
+  font-size: 12px;
+}
+.footer .footer__bottom a {
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+  color: #000000;
+}
+
+/* Media Queries Mixin
+**********************/
+/* Media Queries Mixin
+**********************/
+@media only screen and (min-width: 768px) {
+  .header__lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-1 .section-1__text-container {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section-1 .section-1__text-container {
+    padding-top: 140px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-1 .section-1__text-container {
+    padding-top: 180px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-2 .new-tshirts-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-3 .new-tshirts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-4 .new-tshirts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-5 .reviews-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer__top {
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .footer__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }

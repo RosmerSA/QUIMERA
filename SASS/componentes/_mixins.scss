@@ -1,6 +1,5 @@
 @mixin section_styles($height, $bg-url){
     height: $height;
-    padding-top: 10px;
     background-image: url($bg-url);
     object-fit: cover;
     background-repeat: no-repeat;
@@ -60,9 +59,37 @@
 }
 
 @mixin section-h2_styles {
+    margin: 12px auto;
     font-size: 32px;
     font-family: $fuente-2;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 16px;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size)*1.5;
+}
+
+@mixin icons($size) {
+    font-size: $size;
+    margin-right: 16px;
+    color: $color-fuente-2;
+}
+
+@mixin button {
+    width: 160px;
+    height: 32px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    font-size: $fuente-md;
+    font-family: $fuente-1;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 7px 7px 4px;
+    color: $color-fuente-2;
+    background-color: rgba($color-primario, $alpha: 1);
 }

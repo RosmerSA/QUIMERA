@@ -23,18 +23,6 @@ $fuente-3: 'Roboto Mono', monospace;
     @return $remSize * 1rem;
 }
 
-@mixin font-size($size) {
-    font-size: $size;
-    font-size: calculateRem($size);
-    line-height: calculateRem($size)*1.5;
-}
-
-@mixin icons($size) {
-    font-size: $size;
-    margin-right: 16px;
-    color: $color-fuente-2;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;

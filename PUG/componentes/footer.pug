@@ -1,4 +1,4 @@
-footer.footer 
+footer#nosotros.footer 
 	.footer__top
 		ul
 			li Tienda
@@ -7,7 +7,7 @@ footer.footer
 			li
 				a(href="") poleras
 			li
-				a(href="") accesorios
+				a(href="") nosotros 
 		ul
 			li  Quimera
 			li
@@ -16,16 +16,20 @@ footer.footer
 				a(href="") politicas
 			li
 				a(href="") faq
-		ul
-			li suscribirse
-			li suscribete a nuestro newsletter y obten el 10% de descuento en tu primera compra
-		form.footer__form( action="")
-			input.email(type="email")
-			br 
-			input.suscribete(type="submit" value="Suscribete")
-	.footer__bootom 
+		.form__container
+			ul
+				li suscribirse
+				li
+					| suscribete a nuestro y obten el 10% 
+					br
+					|  de descuento en tu primera compra
+			form.footer__form( action="")
+				input.email(type="email")
+				br 
+				input.suscribete(type="submit" value="Suscribete")
+	.footer__bottom 
 		p
 			span ® QUIMERA — TODOS LOS DERECHOS RESERVADOS
 		p 
 			span DESARROLLADO POR: 
-		a(href="#", target="_blank", rel="noopener noreferrer") ROSMERJS
+			a(href="#", target="_blank", rel="noopener noreferrer") ROSMERJS
