@@ -1,12 +1,13 @@
 .section-1 {
     @include section_styles(100vh,"/IMAGES/background/1.1.png");
+    display: flex;
+    align-items: center;
 }
 
 .section-1__text-container {
     width: 240px;
     display: flex;
     flex-direction: column;
-    padding-top: 110px;
     margin-left: 10vw;
 
     .name-serie {

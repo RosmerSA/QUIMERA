@@ -119,6 +119,12 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-1__text-container {
@@ -130,7 +136,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 110px;
   margin-left: 10vw;
 }
 .section-1__text-container .name-serie {
@@ -555,22 +560,6 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .section-1 .section-1__text-container {
-    padding-top: 100px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .section-1 .section-1__text-container {
-    padding-top: 140px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .section-1 .section-1__text-container {
-    padding-top: 180px;
   }
 }
 
