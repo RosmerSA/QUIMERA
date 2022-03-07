@@ -53,6 +53,7 @@ main {
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+  margin-right: 20px;
 }
 .header__lista li a {
   margin-right: 40px;
@@ -491,7 +492,7 @@ main {
   margin: 20px;
 }
 .footer .footer__top ul li {
-  margin-bottom: 4px;
+  margin-bottom: 14px;
 }
 .footer .footer__top ul li a {
   text-decoration: none;
@@ -516,6 +517,7 @@ main {
   border: 2px solid #000000;
   border-radius: 10px;
   margin-bottom: 12px;
+  outline: 0;
 }
 .footer .footer__form .suscribete {
   width: 160px;
